@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     'John Z Wu' => 'bogardon@gmail.com'
   }
   s.source = {
-    :git => 'https://github.com/bONchON/MSPullToRefreshController.git',
+    :git => 'https://github.com/chenzhuolin1002/MSPullToRefreshController.git',
     :tag => 'v1.1.0'
   }
   s.source_files = 'PullToRefreshDemo/MSPullToRefreshController.{h,m}'
