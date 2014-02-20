@@ -226,7 +226,7 @@
                 self.refreshingDirections |= refreshingDirection;
                 self.refreshableDirections &= ~refreshableDirection;
                 _originalScrollViewContentInset = _scrollView.contentInset;
-                [UIView animateWithDuration:0.3f animations:^{
+                [UIView animateWithDuration:0.2f animations:^{
                     _scrollView.contentInset = contentInset;
                 }];
                 if ([_delegate respondsToSelector:@selector(pullToRefreshController:didEngageRefreshDirection:)]) {
