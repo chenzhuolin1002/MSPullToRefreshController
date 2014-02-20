@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.platform = :ios
-  s.name = "MSPullToRefreshController iOS7 fixed"
+  s.name = "MSPullToRefreshController"
   s.version = "1.1.0"
   s.summary = "The most flexible pull to refresh component EVER."
   s.license = 'MIT'
