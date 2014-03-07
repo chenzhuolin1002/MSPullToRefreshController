@@ -226,6 +226,13 @@
                 self.refreshingDirections |= refreshingDirection;
                 self.refreshableDirections &= ~refreshableDirection;
                 _originalScrollViewContentInset = _scrollView.contentInset;
+                if (_scrollView.frame.size.height > _scrollView.contentSize.height) {
+                    CGFloat h = _scrollView.frame.size.height - _scrollView.contentSize.height;
+                    contentInset = UIEdgeInsetsMake(contentInset.top,
+                                                    contentInset.left,
+                                                    contentInset.bottom + h,
+                                                    contentInset.right);
+                }
                 [UIView animateWithDuration:0.1f animations:^{
                     _scrollView.contentInset = contentInset;
                 }];
